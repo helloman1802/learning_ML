@@ -1,6 +1,6 @@
 from sklearn import tree
 
-classification = tree.DecisionTreeClassifier()
+tree_clf = tree.DecisionTreeClassifier()
 
 # [height, weight, shoe size]
 x = [
