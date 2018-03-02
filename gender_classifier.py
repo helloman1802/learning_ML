@@ -39,4 +39,4 @@ print('Desicion Tree prediction: {}'.format(tree_pred))
 
 gaussian_clf = gaussian_clf.fit(x, y)
 gaussian_pred = gaussian_clf.predict([[190, 70, 43]])
-print('Gaussian Naive Bays prediction: {}'.format(svm_pred))
+print('Gaussian Naive Bays prediction: {}'.format(gaussian_pred))
