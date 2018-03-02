@@ -1,6 +1,8 @@
 from sklearn import tree
+from sklearn.naive_bayes import GaussianNB
 
 tree_clf = tree.DecisionTreeClassifier()
+gaussian_clf = GaussianNB()
 
 # [height, weight, shoe size]
 x = [
@@ -31,8 +33,10 @@ y = ['male',
     ]
 
 # Fit the data to the classifier
-classification = classification.fit(x, y)
+tree_clf = tree_clf.fit(x, y)
+tree_pred = tree_clf.predict([[190, 70, 43]])
+print('Desicion Tree prediction: {}'.format(tree_pred))
 
-prediction = classification.predict([[190, 70, 43]])
-
-print(prediction)
+gaussian_clf = gaussian_clf.fit(x, y)
+gaussian_pred = gaussian_clf.predict([[190, 70, 43]])
+print('Gaussian Naive Bays prediction: {}'.format(svm_pred))
