@@ -1,2 +1,2 @@
 # learning_ML
-All of the projects that I created that taught or are teaching me machine learning
+Each file in this repository is an experiment that has helped me learn something about ML. 
